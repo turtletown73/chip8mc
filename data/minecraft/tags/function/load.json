@@ -1,0 +1,7 @@
+{
+	"values": [
+		"global:load",
+		"chip8:load",
+		"neuralnet:load"
+	]
+}

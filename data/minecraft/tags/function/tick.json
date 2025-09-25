@@ -1,0 +1,6 @@
+{
+	"values": [
+		"chip8:tick",
+		"neuralnet:tick"
+	]
+}

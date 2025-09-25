@@ -1,0 +1,1 @@
+$data modify storage chip8:emu memory[$(arg2)] set value $(arg1)

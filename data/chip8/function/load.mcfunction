@@ -1,0 +1,1 @@
+tellraw @a {"color": "#FF88FF", "text": "The LegitiEmu is LegitiScreaming"}

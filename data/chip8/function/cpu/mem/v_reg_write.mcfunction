@@ -1,0 +1,1 @@
+$data modify storage chip8:emu cpu_v_regs[$(arg2)] set value $(arg1)
