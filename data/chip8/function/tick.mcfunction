@@ -1,0 +1,1 @@
+function chip8:cpu/tick with storage chip8:emu

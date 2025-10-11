@@ -90,4 +90,92 @@ scoreboard players operation .bitwise6 math += .bitwise5 math
 scoreboard players operation .bitwise0 math -= .bitwise3 math
 scoreboard players operation .bitwise1 math -= .bitwise4 math
 
+scoreboard players set .bitwise2 math 512
+scoreboard players set .bitwise5 math 256
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 1024
+scoreboard players set .bitwise5 math 512
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 2048
+scoreboard players set .bitwise5 math 1024
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 4096
+scoreboard players set .bitwise5 math 2048
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 8192
+scoreboard players set .bitwise5 math 4096
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 16384
+scoreboard players set .bitwise5 math 8192
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 32768
+scoreboard players set .bitwise5 math 16384
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
+scoreboard players set .bitwise2 math 65536
+scoreboard players set .bitwise5 math 32768
+scoreboard players operation .bitwise3 math = .bitwise0 math
+scoreboard players operation .bitwise4 math = .bitwise1 math
+scoreboard players operation .bitwise3 math %= .bitwise2 math
+scoreboard players operation .bitwise4 math %= .bitwise2 math
+execute if score .bitwise3 math matches 0 if score .bitwise4 math matches 0 run scoreboard players operation .bitwise6 math -= .bitwise5 math
+scoreboard players operation .bitwise6 math += .bitwise5 math
+scoreboard players operation .bitwise0 math -= .bitwise3 math
+scoreboard players operation .bitwise1 math -= .bitwise4 math
+
 return run scoreboard players get .bitwise6 math
