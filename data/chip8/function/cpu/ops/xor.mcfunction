@@ -13,7 +13,7 @@ execute store result storage chip8:emu temp3 byte 1 run function chip8:cpu/mem/v
 
 data modify storage global:bitwise arg1 set from storage chip8:emu temp2
 data modify storage global:bitwise arg2 set from storage chip8:emu temp3
-execute store result storage chip8:emu arg1 int 1 run function global:bitwise/byte/and with storage global:bitwise
+execute store result storage chip8:emu arg1 int 1 run function global:bitwise/byte/xor with storage global:bitwise
 data modify storage chip8:emu arg2 set from storage chip8:emu temp
 
 function chip8:cpu/mem/v_reg_write with storage chip8:emu
