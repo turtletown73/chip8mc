@@ -7,3 +7,6 @@ function chip8:cpu/tests/vxyeq
 function chip8:cpu/tests/vxeq
 function chip8:cpu/tests/vxadd
 function chip8:cpu/tests/and
+function chip8:cpu/tests/vyxsub
+function chip8:cpu/tests/vxyrshift
+function chip8:cpu/tests/vxylshift
