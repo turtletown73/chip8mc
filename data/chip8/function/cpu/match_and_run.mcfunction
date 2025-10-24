@@ -22,3 +22,7 @@ execute if score .opcode math matches 32768..36863 if data storage chip8:emu {op
 execute if score .opcode math matches 32768..36863 if data storage chip8:emu {opcodematch:6b} run function chip8:cpu/ops/vxyrshift with storage chip8:emu
 execute if score .opcode math matches 32768..36863 if data storage chip8:emu {opcodematch:7b} run function chip8:cpu/ops/vyxsub with storage chip8:emu
 execute if score .opcode math matches 32768..36863 if data storage chip8:emu {opcodematch:14b} run function chip8:cpu/ops/vxylshift with storage chip8:emu
+execute if score .opcode math matches 36864..40959 if data storage chip8:emu {opcodematch:0b} run function chip8:cpu/ops/vxyneq with storage chip8:emu
+execute if score .opcode math matches 40960..45055 run function chip8:cpu/ops/iset with storage chip8:emu
+execute if score .opcode math matches 45056..49151 run function chip8:cpu/ops/jmpv0 with storage chip8:emu
+execute if score .opcode math matches 49152..53247 run function chip8:cpu/ops/vxrand with storage chip8:emu

@@ -4,6 +4,9 @@ execute store result score .temp math run function global:bitwise/short/and with
 execute store result storage chip8:emu temp short 1 run scoreboard players operation .temp math /= .byte math
 
 data modify storage global:bitwise arg2 set value 255
+execute store result storage global:bitwise arg2 short 1 run function global:bitwise/short/and with storage global:bitwise
+
+execute store result storage global:bitwise arg1 short 1 run random value 0..255
 execute store result storage chip8:emu temp2 short 1 run function global:bitwise/short/and with storage global:bitwise
 
 data modify storage chip8:emu arg2 set from storage chip8:emu temp

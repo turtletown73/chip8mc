@@ -1,0 +1,15 @@
+function chip8:cpu/tests/vxset_vxyadd
+function chip8:cpu/tests/vxysub
+function chip8:cpu/tests/call_ret
+function chip8:cpu/tests/vxyset
+function chip8:cpu/tests/vxyeq
+function chip8:cpu/tests/vxeq
+function chip8:cpu/tests/vxadd
+function chip8:cpu/tests/and
+function chip8:cpu/tests/vyxsub
+function chip8:cpu/tests/vxyrshift
+function chip8:cpu/tests/vxylshift
+function chip8:cpu/tests/iset
+function chip8:cpu/tests/jmp
+function chip8:cpu/tests/jmpv0
+function chip8:cpu/tests/vxrand

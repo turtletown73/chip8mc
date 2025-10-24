@@ -4,6 +4,8 @@ gamerule doFireTick false
 gamerule doImmediateRespawn true
 gamerule locatorBar false
 gamerule keepInventory true
+gamerule maxCommandChainLength 2147483647
+gamerule maxCommandForkCount 2147483647
 
 scoreboard objectives add math dummy
 scoreboard players set .minusone math -1
