@@ -8,3 +8,4 @@ data modify storage chip8:emu cpu_stack set value [0s,0s,0s,0s,0s,0s,0s,0s,0s,0s
 data modify storage chip8:emu keyboard set value [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 data modify storage chip8:emu cpu_dt set value 0b
 data modify storage chip8:emu cpu_st set value 0b
+function chip8:cpu/update_screen

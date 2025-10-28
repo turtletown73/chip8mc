@@ -13,3 +13,4 @@ function chip8:cpu/tests/iset
 function chip8:cpu/tests/jmp
 function chip8:cpu/tests/jmpv0
 function chip8:cpu/tests/vxrand
+function chip8:cpu/tests/drw

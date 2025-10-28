@@ -12,6 +12,10 @@ scoreboard players set .minusone math -1
 scoreboard players set .zero math 0
 scoreboard players set .one math 1
 scoreboard players set .two math 2
+scoreboard players set .four math 4
+scoreboard players set .eight math 8
 scoreboard players set .sqrtbyte math 16
+scoreboard players set .thirtytwo math 32
+scoreboard players set .sixtyfour math 64
 scoreboard players set .halfbyte math 128
 scoreboard players set .byte math 256

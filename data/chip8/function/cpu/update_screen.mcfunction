@@ -1,0 +1,1 @@
+execute as @e[tag=chip8screen0] run data modify entity @s text set value {nbt:"screen",storage:"chip8:emu",interpret:true}

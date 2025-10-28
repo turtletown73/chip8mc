@@ -1,12 +1,5 @@
-function chip8:cpu/reset
-data modify storage chip8:emu ram[512] set value 96b
-data modify storage chip8:emu ram[513] set value 10b
-data modify storage chip8:emu ram[514] set value 97b
-data modify storage chip8:emu ram[515] set value 10b
-data modify storage chip8:emu ram[516] set value 80b
-data modify storage chip8:emu ram[517] set value 16b
-data modify storage chip8:emu cpu_pc set value 512s
-
+data modify storage chip8:emu program set value [96b,10b,97b,10b,80b,16b]
+function chip8:cpu/load_program
 function chip8:cpu/run_all_loop
 
 data modify storage chip8:emu testpass set value 1

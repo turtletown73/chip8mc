@@ -26,3 +26,4 @@ execute if score .opcode math matches 36864..40959 if data storage chip8:emu {op
 execute if score .opcode math matches 40960..45055 run function chip8:cpu/ops/iset with storage chip8:emu
 execute if score .opcode math matches 45056..49151 run function chip8:cpu/ops/jmpv0 with storage chip8:emu
 execute if score .opcode math matches 49152..53247 run function chip8:cpu/ops/vxrand with storage chip8:emu
+execute if score .opcode math matches 53248..57343 run function chip8:cpu/ops/drw/drw with storage chip8:emu

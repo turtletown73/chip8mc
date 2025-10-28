@@ -5,3 +5,5 @@ function chip8:cpu/match_and_run with storage chip8:emu
 
 execute store result score .temp math run data get storage chip8:emu cpu_pc
 execute store result storage chip8:emu cpu_pc short 1 run scoreboard players operation .temp math += .two math
+
+function chip8:cpu/tick_timers
