@@ -1,1 +1,10 @@
 function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu
+function chip8:cpu/tick with storage chip8:emu

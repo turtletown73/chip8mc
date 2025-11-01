@@ -1,6 +1,6 @@
 data modify storage chip8:emu program set value [96b,17b,97b,10b,-128b,23b]
-function chip8:cpu/load_program
-function chip8:cpu/run_all_loop
+function chip8:cpu/util/load_program
+function chip8:cpu/util/run_all_loop
 
 data modify storage chip8:emu testpass set value 1
 execute store result score .temp math run data get storage chip8:emu cpu_v_regs[0]

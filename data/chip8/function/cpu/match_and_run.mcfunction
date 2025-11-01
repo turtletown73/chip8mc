@@ -2,6 +2,9 @@ execute store result score .opcode math run data get storage chip8:emu opcode
 data modify storage global:bitwise arg1 set from storage chip8:emu opcode
 data modify storage global:bitwise arg2 set value 15
 execute store result storage chip8:emu opcodematch byte 1 run function global:bitwise/short/and with storage global:bitwise
+data modify storage global:bitwise arg2 set value 240
+execute store result score .temp math run function global:bitwise/short/and with storage global:bitwise
+execute store result storage chip8:emu opcodematch2 byte 1 run scoreboard players operation .temp math /= .sqrtbyte math
 
 execute if score .opcode math matches 0 run function chip8:cpu/ops/nop with storage chip8:emu
 execute if score .opcode math matches 224 run function chip8:cpu/ops/cls with storage chip8:emu
@@ -27,3 +30,12 @@ execute if score .opcode math matches 40960..45055 run function chip8:cpu/ops/is
 execute if score .opcode math matches 45056..49151 run function chip8:cpu/ops/jmpv0 with storage chip8:emu
 execute if score .opcode math matches 49152..53247 run function chip8:cpu/ops/vxrand with storage chip8:emu
 execute if score .opcode math matches 53248..57343 run function chip8:cpu/ops/drw/drw with storage chip8:emu
+execute if score .opcode math matches 57344..61439 if data storage chip8:emu {opcodematch2:9b,opcodematch:14b} run function chip8:cpu/ops/skpkey with storage chip8:emu
+execute if score .opcode math matches 57344..61439 if data storage chip8:emu {opcodematch2:10b,opcodematch:1b} run function chip8:cpu/ops/sknpkey with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:0b,opcodematch:7b} run function chip8:cpu/ops/vxdtset with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:1b,opcodematch:5b} run function chip8:cpu/ops/dtset with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:1b,opcodematch:8b} run function chip8:cpu/ops/stset with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:1b,opcodematch:14b} run function chip8:cpu/ops/ivxadd with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:0b,opcodematch:10b} run function chip8:cpu/ops/vxkeyset with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:6b,opcodematch:5b} run function chip8:cpu/ops/fillm2v with storage chip8:emu
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:5b,opcodematch:5b} run function chip8:cpu/ops/fillv2m with storage chip8:emu

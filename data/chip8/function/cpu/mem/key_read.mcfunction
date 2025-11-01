@@ -1,0 +1,1 @@
+$return run data get storage chip8:emu keyboard[$(arg1)]

@@ -11,7 +11,6 @@ execute store result score .temp math run function chip8:cpu/mem/v_reg_read with
 
 execute store result storage global:bitwise arg1 byte 1 run scoreboard players get .temp math
 data modify storage global:bitwise arg2 set value 128
-
 execute store result score .temp2 math run function global:bitwise/byte/and with storage global:bitwise
 execute store result storage chip8:emu cpu_v_regs[15] byte 1 run scoreboard players operation .temp2 math /= .halfbyte math
 

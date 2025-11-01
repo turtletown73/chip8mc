@@ -4,8 +4,8 @@ gamerule doFireTick false
 gamerule doImmediateRespawn true
 gamerule locatorBar false
 gamerule keepInventory true
-gamerule maxCommandChainLength 2147483647
-gamerule maxCommandForkCount 2147483647
+#gamerule maxCommandChainLength 2147483647 <-- bad fucking idea
+#gamerule maxCommandForkCount 2147483647 <-- bad fucking idea
 
 scoreboard objectives add math dummy
 scoreboard players set .minusone math -1
@@ -19,3 +19,4 @@ scoreboard players set .thirtytwo math 32
 scoreboard players set .sixtyfour math 64
 scoreboard players set .halfbyte math 128
 scoreboard players set .byte math 256
+scoreboard players set .twelvebitoverflow math 4096

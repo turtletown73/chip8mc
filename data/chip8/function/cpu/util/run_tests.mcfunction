@@ -13,4 +13,11 @@ function chip8:cpu/tests/iset
 function chip8:cpu/tests/jmp
 function chip8:cpu/tests/jmpv0
 function chip8:cpu/tests/vxrand
+function chip8:cpu/tests/dtset_vxdtset
+function chip8:cpu/tests/ivxadd
+function chip8:cpu/tests/vxkeyset
+function chip8:cpu/tests/skpkey
+function chip8:cpu/tests/overflows
+function chip8:cpu/tests/fillm2v
+function chip8:cpu/tests/fillv2m
 function chip8:cpu/tests/drw

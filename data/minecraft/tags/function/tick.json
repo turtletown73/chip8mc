@@ -1,6 +1,5 @@
 {
 	"values": [
-		"chip8:tick",
-		"neuralnet:tick"
+		"chip8:tick"
 	]
 }
