@@ -1,5 +1,5 @@
-$scoreboard players set .bitwise0 math $(arg1)
-$scoreboard players set .bitwise1 math $(arg2)
+execute store result score .bitwise0 math run data get storage global:bitwise arg1
+execute store result score .bitwise1 math run data get storage global:bitwise arg2
 scoreboard players set .bitwise6 math 0
 
 scoreboard players set .bitwise2 math 2
