@@ -1,5 +1,26 @@
 tellraw @a {"color": "#FF88FF", "text": "The LegitiEmu is LegitiScreaming"}
 function chip8:cpu/util/run_tests
 
-kill @e[type=text_display,tag=chip8screen0]
-summon text_display 0.0 65.0 -10.0 {Tags:["chip8screen0"],line_width:641,text:{nbt:"screen",storage:"chip8:emu",interpret:true},background:0}
+kill @e[type=text_display,tag=chip8screen]
+summon text_display 0.0 65.0 -10.0 {Tags:["chip8screen"],line_width:641,text:{nbt:"screen",storage:"chip8:emu",interpret:true},background:0}
+
+kill @e[tag=chip8keyboard]
+summon interaction 0.2 63.7 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"0",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","0"],height:0.2}
+summon interaction 0.4 63.7 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"1",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","1"],height:0.2}
+summon interaction 0.6 63.7 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"2",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","2"],height:0.2}
+summon interaction 0.8 63.7 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"3",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","3"],height:0.2}
+
+summon interaction 0.2 63.5 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"4",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","4"],height:0.2}
+summon interaction 0.4 63.5 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"5",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","5"],height:0.2}
+summon interaction 0.6 63.5 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"6",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","6"],height:0.2}
+summon interaction 0.8 63.5 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"7",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","7"],height:0.2}
+
+summon interaction 0.2 63.3 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"8",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","8"],height:0.2}
+summon interaction 0.4 63.3 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"9",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","9"],height:0.2}
+summon interaction 0.6 63.3 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"a",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","a"],height:0.2}
+summon interaction 0.8 63.3 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"b",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","b"],height:0.2}
+
+summon interaction 0.2 63.1 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"c",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","c"],height:0.2}
+summon interaction 0.4 63.1 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"d",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","d"],height:0.2}
+summon interaction 0.6 63.1 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"e",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","e"],height:0.2}
+summon interaction 0.8 63.1 -3.0999 {width:0.2,Passengers:[{id:"text_display",text:"f",Tags:["chip8keyboard"],background:-16777216,transformation:{translation:[0d, -0.16d, 0.1001d],scale:[0.5d,0.5d,0.5d],left_rotation:[0.0d, 0.0d, 0.0d, 1.0d],right_rotation:[0.0d, 0.0d, 0.0d, 1.0d]}}],Tags:["chip8keyboard","f"],height:0.2}

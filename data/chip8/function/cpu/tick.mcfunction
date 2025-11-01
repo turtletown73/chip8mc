@@ -6,6 +6,8 @@ execute store result storage chip8:emu opcode int 1 run function chip8:cpu/mem/m
 function chip8:cpu/util/check_frozen
 execute unless data storage chip8:emu {frozen:0} run return 0
 
+function chip8:cpu/util/update_keyboard
+
 function chip8:cpu/tick_timers
 function chip8:cpu/match_and_run
 
