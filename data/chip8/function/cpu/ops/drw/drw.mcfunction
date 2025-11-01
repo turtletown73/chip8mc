@@ -17,4 +17,3 @@ execute store result score .temp3 math run function global:bitwise/short/and wit
 
 data modify storage chip8:emu temp set value 0
 function chip8:cpu/ops/drw/drw_loop_y with storage chip8:emu
-

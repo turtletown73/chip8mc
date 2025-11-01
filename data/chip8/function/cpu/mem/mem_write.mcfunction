@@ -1,1 +1,1 @@
-$data modify storage chip8:emu ram[$(arg2)] set value $(arg1)ub
+$execute store result storage chip8:emu ram[$(arg2)] byte 1 run data get storage chip8:emu arg1
