@@ -20,4 +20,5 @@ function chip8:cpu/tests/skpkey
 function chip8:cpu/tests/overflows
 function chip8:cpu/tests/fillm2v
 function chip8:cpu/tests/fillv2m
+function chip8:cpu/tests/bcd
 function chip8:cpu/tests/drw

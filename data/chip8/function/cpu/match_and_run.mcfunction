@@ -39,3 +39,5 @@ execute if score .opcode math matches 61440..65535 if data storage chip8:emu {op
 execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:0b,opcodematch:10b} run function chip8:cpu/ops/vxkeyset
 execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:6b,opcodematch:5b} run function chip8:cpu/ops/fillm2v
 execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:5b,opcodematch:5b} run function chip8:cpu/ops/fillv2m
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:2b,opcodematch:9b} run function chip8:cpu/ops/i2sprite
+execute if score .opcode math matches 61440..65535 if data storage chip8:emu {opcodematch2:3b,opcodematch:3b} run function chip8:cpu/ops/bcd
