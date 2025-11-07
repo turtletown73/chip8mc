@@ -1,0 +1,16 @@
+execute as @e[tag=chip8keyboard,tag=k0] unless data entity @s interaction run data modify storage chip8:emu keyboard[0] set value 0
+execute as @e[tag=chip8keyboard,tag=k1] unless data entity @s interaction run data modify storage chip8:emu keyboard[1] set value 0
+execute as @e[tag=chip8keyboard,tag=k2] unless data entity @s interaction run data modify storage chip8:emu keyboard[2] set value 0
+execute as @e[tag=chip8keyboard,tag=k3] unless data entity @s interaction run data modify storage chip8:emu keyboard[3] set value 0
+execute as @e[tag=chip8keyboard,tag=k4] unless data entity @s interaction run data modify storage chip8:emu keyboard[4] set value 0
+execute as @e[tag=chip8keyboard,tag=k5] unless data entity @s interaction run data modify storage chip8:emu keyboard[5] set value 0
+execute as @e[tag=chip8keyboard,tag=k6] unless data entity @s interaction run data modify storage chip8:emu keyboard[6] set value 0
+execute as @e[tag=chip8keyboard,tag=k7] unless data entity @s interaction run data modify storage chip8:emu keyboard[7] set value 0
+execute as @e[tag=chip8keyboard,tag=k8] unless data entity @s interaction run data modify storage chip8:emu keyboard[8] set value 0
+execute as @e[tag=chip8keyboard,tag=k9] unless data entity @s interaction run data modify storage chip8:emu keyboard[9] set value 0
+execute as @e[tag=chip8keyboard,tag=ka] unless data entity @s interaction run data modify storage chip8:emu keyboard[10] set value 0
+execute as @e[tag=chip8keyboard,tag=kb] unless data entity @s interaction run data modify storage chip8:emu keyboard[11] set value 0
+execute as @e[tag=chip8keyboard,tag=kc] unless data entity @s interaction run data modify storage chip8:emu keyboard[12] set value 0
+execute as @e[tag=chip8keyboard,tag=kd] unless data entity @s interaction run data modify storage chip8:emu keyboard[13] set value 0
+execute as @e[tag=chip8keyboard,tag=ke] unless data entity @s interaction run data modify storage chip8:emu keyboard[14] set value 0
+execute as @e[tag=chip8keyboard,tag=kf] unless data entity @s interaction run data modify storage chip8:emu keyboard[15] set value 0

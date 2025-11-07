@@ -7,7 +7,8 @@ execute store result storage chip8:emu arg1 byte 1 run scoreboard players operat
 execute store result score .temp math run function chip8:cpu/mem/v_reg_read with storage chip8:emu
 
 scoreboard players operation .temp math += .temp2 math
-execute if score .temp math >= .twelvebitoverflow math run data modify storage chip8:emu cpu_v_regs[15] set value 1b
-execute unless score .temp math >= .twelvebitoverflow math run data modify storage chip8:emu cpu_v_regs[15] set value 0b
+# the vf myth strikes again (this was never a thing in chip8)
+#execute if score .temp math >= .twelvebitoverflow math run data modify storage chip8:emu cpu_v_regs[15] set value 1b
+#execute unless score .temp math >= .twelvebitoverflow math run data modify storage chip8:emu cpu_v_regs[15] set value 0b
 execute store result storage chip8:emu temp2 short 1 run scoreboard players get .temp math
 data modify storage chip8:emu cpu_i_reg set from storage chip8:emu temp2

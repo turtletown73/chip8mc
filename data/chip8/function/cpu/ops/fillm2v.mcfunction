@@ -114,3 +114,7 @@ execute store result storage chip8:emu arg1 short 1 run scoreboard players get .
 execute store result storage chip8:emu arg1 short 1 run function chip8:cpu/mem/mem_read with storage chip8:emu
 execute store result storage chip8:emu arg2 byte 1 run scoreboard players get .temp3 math
 execute unless score .temp math < .temp3 math run function chip8:cpu/mem/v_reg_write with storage chip8:emu
+
+execute store result score .temp2 math run data get storage chip8:emu cpu_i_reg
+scoreboard players operation .temp2 math += .temp math
+execute store result storage chip8:emu cpu_i_reg short 1 run scoreboard players operation .temp2 math += .one math

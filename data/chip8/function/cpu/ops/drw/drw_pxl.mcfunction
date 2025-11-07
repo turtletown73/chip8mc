@@ -1,3 +1,12 @@
+scoreboard players operation .temp10 math = .temp math
+scoreboard players operation .temp11 math = .temp2 math
+scoreboard players operation .temp10 math %= .sixtyfour math
+scoreboard players operation .temp11 math %= .thirtytwo math
+scoreboard players operation .temp10 math += .temp7 math
+scoreboard players operation .temp11 math += .temp4 math
+execute if score .temp10 math >= .sixtyfour math run return 0
+execute if score .temp11 math >= .thirtytwo math run return 0
+
 scoreboard players operation .temp7 math += .temp math
 scoreboard players operation .temp8 math = .temp4 math
 scoreboard players operation .temp8 math += .temp2 math

@@ -16,4 +16,7 @@ data modify storage global:bitwise arg2 set value 15
 execute store result score .temp3 math run function global:bitwise/short/and with storage global:bitwise
 
 data modify storage chip8:emu temp set value 0
-function chip8:cpu/ops/drw/drw_loop_y with storage chip8:emu
+data modify storage chip8:emu cpu_v_regs[15] set value 0b
+function chip8:cpu/ops/drw/drw_loop_y
+
+data modify storage chip8:emu frozen set value 3

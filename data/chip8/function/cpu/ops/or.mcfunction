@@ -17,3 +17,4 @@ execute store result storage chip8:emu arg1 int 1 run function global:bitwise/by
 data modify storage chip8:emu arg2 set from storage chip8:emu temp
 
 function chip8:cpu/mem/v_reg_write with storage chip8:emu
+data modify storage chip8:emu cpu_v_regs[15] set value 0b
