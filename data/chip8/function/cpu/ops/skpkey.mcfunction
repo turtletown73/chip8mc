@@ -11,5 +11,3 @@ execute store result storage chip8:emu temp int 1 run function chip8:cpu/mem/key
 execute store result score .temp3 math run data get storage chip8:emu cpu_pc
 execute if data storage chip8:emu {temp:1} run scoreboard players operation .temp3 math += .two math
 execute store result storage chip8:emu cpu_pc short 1 run scoreboard players get .temp3 math
-
-function chip8:cpu/util/update_keyboard_2
