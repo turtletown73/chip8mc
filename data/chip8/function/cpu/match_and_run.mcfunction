@@ -1,9 +1,9 @@
 execute store result score .opcode math run data get storage chip8:emu opcode
 data modify storage global:bitwise arg1 set from storage chip8:emu opcode
 data modify storage global:bitwise arg2 set value 15
-execute store result storage chip8:emu opcodematch byte 1 run function global:bitwise/short/and with storage global:bitwise
+execute store result storage chip8:emu opcodematch byte 1 run function global:bitwise/short/and
 data modify storage global:bitwise arg2 set value 240
-execute store result score .temp math run function global:bitwise/short/and with storage global:bitwise
+execute store result score .temp math run function global:bitwise/short/and
 execute store result storage chip8:emu opcodematch2 byte 1 run scoreboard players operation .temp math /= .sqrtbyte math
 
 execute if score .opcode math matches 0 run function chip8:cpu/ops/nop
